@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Markdown</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="markdown">Markdown</h1>
+<ul>
+<li><a href="#markdown">Markdown</a>
+<ul>
+<li><a href="#introducing-the-gigavuehc3-chassis">Introducing the GigaVUE‑HC3 Chassis</a></li>
+<li><a href="#gigavuehc3-overview">GigaVUE‑HC3 Overview</a>
+<ul>
+<li><a href="#control-card-version-1-ccv1">Control Card Version 1 (CCv1)</a></li>
+</ul>
+</li>
+<li><a href="#unpacking-the-gigavuehc3-shipment">Unpacking the GigaVUE‑HC3 Shipment</a>
+<ul>
+<li><a href="#use-the-following-procedure-to-unpack-the-node">Use the following procedure to unpack the node:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="introducing-the-gigavuehc3-chassis">Introducing the GigaVUE‑HC3 Chassis</h2>
+<p>The fully-assembled GigaVUE‑HC3 chassis consists of a 3RU, rack-mountable, 19in-wide chassis with management, network, and tool ports at the front and power connections, fans, and access to the control card at the rear. GigaSMART is available with SMT-HC3-C05 installed in the chassis. <a href="https://docs.gigamon.com/doclib69/Content/HW-GV-HC3/Introducing_the_GigaVUE_HC3_Chassis.html?tocpath=Hardware%7CGigaVUE%E2%80%91HC3%7CIntroducing%20the%20GigaVUE-HC3%20Chassis%7C_____0#hc3__intro_3625676118_1417385">Introducing the GigaVUE‑HC3 Chassis</a> summarizes the bays on the front, including modules and extension board, and <a href="https://docs.gigamon.com/doclib69/Content/HW-GV-HC3/Introducing_the_GigaVUE_HC3_Chassis.html?tocpath=Hardware%7CGigaVUE%E2%80%91HC3%7CIntroducing%20the%20GigaVUE-HC3%20Chassis%7C_____0#hc3__intro_3625676118_1284729">Rear View of the GigaVUE‑HC3 Chassis</a> Chassis summarizes the rear of the GigaVUE‑HC3 chassis including fans and power supply modules.</p>
+<h2 id="gigavuehc3-overview">GigaVUE‑HC3 Overview</h2>
+<p>The GigaVUE‑HC3 node delivers the next-generation fabric visibility and security delivery platform. It offers high capacity in a modular 3RU footprint. It is optimized for 40Gb and 100Gb connectivity and offers port modules and high-performance GigaSMART.</p>
+<p><img src="file:////Images/unnamed%20(1).png" alt="Image"></p>
+<h3 id="control-card-version-1-ccv1">Control Card Version 1 (CCv1)</h3>
+<p>Control card version 1 (CCv1) supports the following modules:</p>
+<ul>
+<li>PRT-HC3-X24</li>
+<li>PRT-HC3-C08Q08</li>
+<li>SMT-HC3-C05</li>
+<li>BPS-HC3-C25F2G</li>
+<li>BPS-HC3-Q35C2G</li>
+<li>BPS-HC3-C35C2G</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>LED</th>
+<th>LED Color</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CON Port</td>
+<td>-</td>
+<td>Configure the GigaVUE-HC3 locally over a serial terminal connection (RJ-45 console port).</td>
+</tr>
+<tr>
+<td>P/S</td>
+<td>—</td>
+<td>Reserved for future use.</td>
+</tr>
+<tr>
+<td>PPS(IN)</td>
+<td>—</td>
+<td>Reserved for future use.</td>
+</tr>
+<tr>
+<td>MGMT Port LEDs</td>
+<td>Solid Amber</td>
+<td>Link up</td>
+</tr>
+<tr>
+<td></td>
+<td>Blinking Green</td>
+<td>Activity</td>
+</tr>
+<tr>
+<td>STACK Port LEDs</td>
+<td>Solid Green</td>
+<td>Link up/activity</td>
+</tr>
+<tr>
+<td></td>
+<td>Solid Amber</td>
+<td>Disabled port</td>
+</tr>
+<tr>
+<td></td>
+<td>OFF</td>
+<td>The Port is administratively enabled, but the link is down</td>
+</tr>
+<tr>
+<td>PWR</td>
+<td>OFF</td>
+<td>Power is disconnected</td>
+</tr>
+<tr>
+<td></td>
+<td>Solid Green</td>
+<td>Normal operation</td>
+</tr>
+<tr>
+<td></td>
+<td>Solid Red</td>
+<td>Fault</td>
+</tr>
+<tr>
+<td>M/S</td>
+<td>OFF</td>
+<td>Node is member node (standby or normal node) in a cluster.<br><strong>Note:</strong> When a GigaVUE-HC3 node is a standalone node, the M/S LED could be <strong>OFF</strong> or <strong>Solid Green</strong>, depending on whether or not it was ever the leader in a cluster previously.</td>
+</tr>
+<tr>
+<td></td>
+<td>Solid Green</td>
+<td>Node is a leader in a cluster.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="unpacking-the-gigavuehc3-shipment">Unpacking the GigaVUE‑HC3 Shipment</h2>
+<p>The GigaVUE‑HC3 node is shipped assembled, except for the modules. The extension board is already installed in the front of the chassis. The control card, fan tray, and two power supply modules (PSMs) are already installed in the rear of the chassis. Filler panels occupy the four front module slots and two rear PSM slots.
+The shipping package includes the chassis, an accessory kit containing standard cables and screws, a rack mounting rail kit, and the left and right sides of the optional cable management assembly.
+The modules are shipped in separate boxes.</p>
+<h3 id="use-the-following-procedure-to-unpack-the-node">Use the following procedure to unpack the node:</h3>
+<ol>
+<li>Inspect the shipping boxes. If any cartons were damaged, file a claim with the carrier who delivered them.</li>
+<li>Open the box containing the GigaVUE‑HC3 chassis and remove the accessory kit from the top of the shipment. The accessory kit includes the power cords, console cable and adapter, and the left and right sides of the optional cable management assembly.</li>
+</ol>
+<p>If you plan on installing the optional cable management assembly, set aside the two parts.</p>
+<ol start="3">
+<li>Open the module boxes and set them aside.</li>
+<li>Leave all protective filler panels in place in the chassis. DO NOT install the modules yet. Gigamon recommends rack-mounting the GigaVUE‑HC3 chassis without the modules because of its weight (~88lb).</li>
+</ol>
+
+            
+            
+        </body>
+        </html>
