@@ -53,3 +53,4 @@ If you plan on installing the optional cable management assembly, set aside the 
 
 3. Open the module boxes and set them aside.
 4. Leave all protective filler panels in place in the chassis. DO NOT install the modules yet. Gigamon recommends rack-mounting the GigaVUE‑HC3 chassis without the modules because of its weight (~88lb).
+Durgesh
